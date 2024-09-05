@@ -1,10 +1,17 @@
-import React from 'react'
+import React from "react";
+import TopHeader from "./components/TopHeader";
+import { Route, Routes } from "react-router-dom";
+import Todo from "./pages/Todo";
 
 const App = () => {
-  console.log("hello World")
   return (
-    <div>App</div>
-  )
-}
+    <>
+      <TopHeader />
+      <Routes>
+        <Route path="/" element={<Todo />}></Route>
+      </Routes>
+    </>
+  );
+};
 
-export default App
+export default App;
