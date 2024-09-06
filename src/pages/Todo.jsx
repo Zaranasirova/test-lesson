@@ -17,7 +17,7 @@ const Todo = () => {
 
       {
         todos.map((item,index)=>
-          <TodoList data={item} key={index}/>
+          <TodoList data={item} key={index} index={index}/>
         )
       }
     
