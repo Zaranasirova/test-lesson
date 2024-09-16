@@ -6,6 +6,7 @@ const TopHeader = () => {
     <header>
         <nav>
             <Link to={"/"}>Todo</Link>
+            <Link to={"/fibonacci"}>Fibonacci Seriyası</Link>
         </nav>
     </header>
   )
