@@ -24,7 +24,16 @@ export const GlobalContext = ({ children }) => {
     }
   };
 
-  const globalData = { todoValue, setTodoValue, addTodo, todos, removeTodo };
+
+const handleEdit=(indexeditTodo)=>{
+const existingeditTodo=todos.find((item,index)=>index===indexeditTodo);
+console.log(existingeditTodo)
+}
+
+
+
+
+  const globalData = { todoValue, setTodoValue, addTodo, todos, removeTodo,handleEdit };
   return (
     <MainContext.Provider value={globalData}>{children}</MainContext.Provider>
   );
