@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const Algoritm = () => {
+  //Anagramm////
   const [str1, setStr1] = useState("");
   const [str2, setStr2] = useState("");
   const [isAnagram, setisAnagram] = useState(null);
@@ -15,8 +16,10 @@ const Algoritm = () => {
     const normalizedWord2 = normalizeString(str2);
     setisAnagram(sortString(normalizedWord1) === sortString(normalizedWord2));
   };
+/////////hedef cem//////////////
 
   return (
+  <>
     <div>
       <label>1-ci sozu daxil et</label>
       <input
@@ -35,6 +38,12 @@ const Algoritm = () => {
         <p>{isAnagram ? "Sətirlər anagramdır!" : "Sətirlər anagram deyil!"}</p>
       )}
     </div>
+    <div>
+      <label>hedef cemi yaz</label>
+      <input type="text" value={} />
+      <button>Click et</button>
+    </div>
+  </>
   );
 };
 
