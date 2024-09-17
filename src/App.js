@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Todo from "./pages/Todo";
 import GlobalContext from "./utils/MainContext";
 import Fibonacci from "./components/Fibonacci";
+import Algoritm from "./components/Algoritm";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       <TopHeader />
       <Routes>
         <Route path="/" element={<Todo />}></Route>
-        <Route path="/fibonacci" element={<Fibonacci />}></Route>
+        <Route path="/fibonacci" element={<Fibonacci/>}></Route>
+        <Route path="/alqoritm" element={<Algoritm/>}></Route>
       </Routes>
     </GlobalContext>
   );

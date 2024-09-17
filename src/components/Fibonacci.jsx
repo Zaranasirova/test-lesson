@@ -1,31 +1,20 @@
 import React, { useState } from "react";
 
 const Fibonacci = () => {
-  // const [number, setNumber] = useState(0);
-  // const [numArr, setNumArr] = useState([0, 1]);
+  const [number, setNumber] = useState(0);
+  const [fibSeries, setFibSeries] = useState([]);
 
-  // const handleFibonacciNumber = () => {
-  //   for (let i = 0; i < number; i++) {
-  //   setNumArr(numArr.push(numArr[i]+numArr[i+1]));
-  //   numArr.slice(0, number)
-  //   }
-  // };
-
-const [number,setNumber]=useState(0);
-const [fibSeries,setFibSeries]=useState([]);
-
-
-const calcualteFibonacciseries=(n)=>{
-  let fib=[0,1];
-  for(let i=2; i<n;i++){
-    fib.push(fib[i-1]+fib[i-2]);
-  }
-  return fib.slice(0,n);
-}
-const handleFibonacciNumber=()=>{
-  const series=calcualteFibonacciseries(number);
-  setFibSeries(series);
-}
+  const calcualteFibonacciseries = (n) => {
+    let fib = [0, 1];
+    for (let i = 2; i < n; i++) {
+      fib.push(fib[i - 1] + fib[i - 2]);
+    }
+    return fib.slice(0, n);
+  };
+  const handleFibonacciNumber = () => {
+    const series = calcualteFibonacciseries(number);
+    setFibSeries(series);
+  };
 
   return (
     <div className="fibonacci">
