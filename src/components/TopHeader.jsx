@@ -8,6 +8,7 @@ const TopHeader = () => {
             <Link to={"/"}>Todo</Link>
             <Link to={"/fibonacci"}>Fibonacci Seriyası</Link>
             <Link to={"/alqoritm"}>Algoritm</Link>
+            <Link to={"/redux"}>Redux</Link>
         </nav>
     </header>
   )
