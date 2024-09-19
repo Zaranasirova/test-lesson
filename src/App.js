@@ -5,6 +5,8 @@ import Todo from "./pages/Todo";
 import GlobalContext from "./utils/MainContext";
 import Fibonacci from "./components/Fibonacci";
 import Algoritm from "./components/Algoritm";
+import Redux from "./components/Redux";
+import UserList from "./components/UserList";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
         <Route path="/" element={<Todo />}></Route>
         <Route path="/fibonacci" element={<Fibonacci/>}></Route>
         <Route path="/alqoritm" element={<Algoritm/>}></Route>
+        <Route path="/redux" element={<Redux/>}></Route>
+        <Route path="/user" element={<UserList/>}></Route>
       </Routes>
     </GlobalContext>
   );
