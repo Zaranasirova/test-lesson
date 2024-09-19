@@ -6,12 +6,4 @@ const initialState = {
   }
 
 
-export const CounterSlice=createSlice({
-    name:'counter',
-    reducers:{
 
-    },
-})
-export const { } = counterSlice.actions
-
-export default counterSlice.reducer

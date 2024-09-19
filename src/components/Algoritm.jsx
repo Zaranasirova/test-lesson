@@ -34,6 +34,21 @@ const Algoritm = () => {
     });
     setPairs(resultPairs);
   };
+  ///en boyuk eded arrayde/////
+  const arr = [1, 2, 7, 5, 3, 8];
+
+  const findMax = (a) => {
+    const max = a[0];
+    a.forEach((item) => {
+      if (item > max) {
+        max = item;
+      }
+    });
+    return max;
+  };
+
+console.log(findMax(arr))
+
 
   return (
     <>
